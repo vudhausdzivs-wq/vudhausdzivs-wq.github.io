@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Meroitic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Meroitic&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -516,74 +520,88 @@
     font-size: 14px;
     color: #666;
 }
+
 /* ===== ЕДИНЫЕ МЕДИА-ЗАПРОСЫ ДЛЯ ВСЕХ БЛОКОВ ===== */
 
 /* ПЛАНШЕТЫ (до 1280px) */
 @media (max-width: 1280px) {
+
     /* Шапка */
     .header {
         padding: 0 40px;
         height: 70px;
     }
+
     .logo img {
         width: 48px;
         height: 48px;
     }
+
     .nav {
         gap: 40px;
     }
+
     .nav-link {
         font-size: 16px;
     }
-    
+
     /* Hero */
     .hero-content {
         margin-left: 40px;
     }
+
     .hero-title {
         font-size: 60px;
         margin-bottom: 50px;
     }
+
     .hero-subtitle {
         font-size: 40px;
     }
-    
+
     /* Заголовки секций */
     .promotional-codes-title,
     .assortment-title {
         font-size: 44px;
     }
-    
+
     /* Промокоды */
     .promotional-codes-grid {
         gap: 20px;
     }
+
     .promotional-codes-item {
         width: 320px;
         padding: 30px 20px;
     }
+
     .promo-logo {
         width: 70px;
     }
+
     .promotional-codes-text {
         font-size: 22px;
     }
-    
+
     /* Ассортимент */
     .assortment-content {
         gap: 20px;
     }
+
     .assortment-left,
     .assortment-right {
         padding: 20px;
         gap: 20px;
     }
+
     .assortment-grid-title {
         font-size: 16px;
     }
+
     .assortment-grid-description {
         font-size: 13px;
     }
+
     .assortment-icon {
         width: 45px;
         height: 45px;
@@ -593,10 +611,12 @@
     .footer-container {
         padding: 0 40px;
     }
+
     .footer-social-link img {
         width: 32px;
         height: 32px;
     }
+
     .marketplace-icon {
         width: 45px;
         height: 45px;
@@ -605,18 +625,22 @@
 
 /* ТЕЛЕФОНЫ (до 768px) */
 @media (max-width: 768px) {
+
     /* Шапка */
     .header {
         padding: 0 16px;
         height: 60px;
     }
+
     .logo img {
         width: 36px;
         height: 36px;
     }
+
     .burger-icon {
         display: flex;
     }
+
     .nav {
         position: fixed;
         top: 60px;
@@ -631,76 +655,90 @@
         transition: left 0.3s ease;
         z-index: 99;
     }
+
     .nav-link {
         font-size: 20px;
     }
-    .burger-toggle:checked ~ .nav {
+
+    .burger-toggle:checked~.nav {
         left: 0;
     }
-    .burger-toggle:checked ~ .burger-icon span:nth-child(1) {
+
+    .burger-toggle:checked~.burger-icon span:nth-child(1) {
         transform: rotate(45deg) translate(6px, 8px);
     }
-    .burger-toggle:checked ~ .burger-icon span:nth-child(2) {
+
+    .burger-toggle:checked~.burger-icon span:nth-child(2) {
         opacity: 0;
     }
-    .burger-toggle:checked ~ .burger-icon span:nth-child(3) {
+
+    .burger-toggle:checked~.burger-icon span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -8px);
     }
-    
+
     /* Hero */
     .hero-content {
         margin-left: 20px;
         margin-right: auto;
         text-align: left;
     }
+
     .hero-title {
         font-size: 36px;
         margin-bottom: 40px;
         text-align: left;
     }
+
     .hero-subtitle {
         font-size: 24px;
         white-space: normal;
         text-align: left;
     }
-    
+
     /* Заголовки секций */
     .promotional-codes-title,
     .assortment-title {
-        font-size: 32px;
+        font-size: 34px;
         margin-bottom: 15px;
     }
+
     .promotional-codes-discription,
     .assortment-discription {
-        font-size: 14px;
+        font-size: 16px;
     }
-    
+
     /* Промокоды */
     .promotional-codes-grid {
+        padding: 0 20px;
         gap: 16px;
     }
+
     .promotional-codes-item {
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
         padding: 25px 20px;
     }
+
     .promo-logo {
         width: 55px;
     }
+
     .promotional-codes-text {
         font-size: 20px;
     }
+
     .copy-btn .shop-btn {
         font-size: 13px;
         padding: 8px 16px;
     }
-    
+
     /* Ассортимент */
     .assortment-content {
         flex-direction: column;
         gap: 20px;
         padding: 0 16px;
     }
+
     .assortment-left,
     .assortment-right {
         width: 100%;
@@ -708,17 +746,21 @@
         padding: 20px 15px;
         gap: 15px;
     }
+
     .assortment-items {
         gap: 12px;
     }
+
     .assortment-icon {
         width: 40px;
         height: 40px;
     }
+
     .assortment-grid-title {
         font-size: 15px;
         margin-bottom: 4px;
     }
+
     .assortment-grid-description {
         font-size: 12px;
     }
@@ -728,6 +770,7 @@
         flex-direction: column;
         gap: 30px;
     }
+
     .footer-col:first-child,
     .footer-col:last-child {
         text-align: center;
@@ -735,121 +778,148 @@
         padding-left: 0;
         padding-right: 0;
     }
+
     .footer-social {
         justify-content: center;
     }
+
     .footer-social-link img {
         width: 36px;
         height: 36px;
     }
+
     .footer-marketplaces {
         justify-content: center;
     }
+
     .marketplace-icon {
         width: 45px;
         height: 45px;
     }
+
     .footer-contacts {
         align-items: center;
     }
 }
 
-/* МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) */
-@media (max-width: 480px) {
+/* МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 490px) */
+@media (max-width: 490px) {
+
     /* Шапка */
     .header {
         padding: 0 12px;
         height: 50px;
     }
+
     .logo img {
         width: 30px;
         height: 30px;
     }
+
     .nav {
         top: 50px;
         height: calc(100vh - 50px);
     }
+
     .nav-link {
         font-size: 18px;
     }
-    
+
     /* Hero */
     .hero-content {
         margin-left: 12px;
         margin-right: auto;
         text-align: left;
     }
+
     .hero-title {
         font-size: 28px;
         margin-bottom: 30px;
         text-align: left;
     }
+
     .hero-subtitle {
         font-size: 18px;
         text-align: left;
     }
-    
+
     /* Заголовки секций */
     .promotional-codes-title,
     .assortment-title {
-        font-size: 28px;
+        font-size: 30px;
         margin-bottom: 10px;
     }
+
     .promotional-codes-discription,
     .assortment-discription {
-        font-size: 13px;
+        font-size: 15px;
     }
-    
+
     /* Промокоды */
+
     .promotional-codes-item {
         padding: 20px 15px;
     }
+
     .promo-logo {
         width: 50px;
     }
+
     .promotional-codes-text {
         font-size: 18px;
     }
-    .copy-btn .shop-btn{
-        font-size: 12px;
+
+    .copy-btn, .shop-btn {
+        font-size: 14px;
         padding: 6px 12px;
+        font-weight: bold;
     }
-    
+
     /* Ассортимент */
     .assortment-content {
-        padding: 0 12px;
+        padding: 0 0;
     }
+
     .assortment-left,
     .assortment-right {
         padding: 15px 12px;
         gap: 12px;
     }
+
     .assortment-items {
         gap: 10px;
     }
+
     .assortment-icon {
         width: 35px;
         height: 35px;
     }
+
     .assortment-grid-title {
         font-size: 13px;
     }
+
     .assortment-grid-description {
         font-size: 11px;
     }
 
-     /* Футер */
+    /* Футер */
     .footer-social-link img {
         width: 32px;
         height: 32px;
     }
+
     .marketplace-icon {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
     }
+
     .footer-phone,
-    .footer-email,
+    .footer-email {
+        font-size: 15px;
+    }
+
     .footer-cooperation-link {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
